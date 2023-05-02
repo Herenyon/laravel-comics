@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Laravel</title>
       
-         @vite(['resources/js/app.js', 'resources/scss/app.scss'])
+         @vite('resources/js/app.js')
     </head>
     <body>
         @include('partials.header')
@@ -25,7 +25,7 @@
                             <a href="">
                                 <ul class="list-unstyled d-flex gap-5">
                                     @foreach ($comics as $comic)
-                                        <li>{{$comic['title']}}</li>
+                                        <li>{{$comic['series']}}</li>
                                     @endforeach
                                 </ul>
                             </a>
@@ -45,7 +45,7 @@
     </body>
 </html>
 <style lang="scss" scoped>
-
+@use "../scss/variables.scss";
 
 section {
             position: relative;
@@ -54,7 +54,7 @@ section {
 .container-comic {
 
 
-    background-image: url(../img/jumbotron.jpg);
+    background-image: url('../img/jumbotron.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 25rem;
@@ -71,16 +71,29 @@ section {
     padding: 1.125rem 18.75rem;
 
 
-    
+    .container-cards {
+        display: flex;
+        align-items: center;
 
-       
-    }
- h3 {
+        word-wrap: break-word;
+        
+
+        .container-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 100%;
+
+        }
+
+        h3 {
             top: -35px;
             position: absolute;
             padding: .5rem .9375rem;
             background-color: $secondary-color-text;
         }
+
+    }
 
     .button {
         display: flex;
@@ -88,30 +101,21 @@ section {
         justify-content: center;
         margin-top: 3.125rem;
 
-        
-    }
-
-
-button {
+        button {
             color: inherit;
             font-weight: bold;
             border: none;
             background-color: $secondary-color-text;
             padding: .5rem 3.75rem;
         }
-        .container-cards {
-        display: flex;
-        align-items: center;
+    }
 
-        word-wrap: break-word;
-        
-
-        }
-        .container-card {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            width: 100%;
-
+}
+button {
+            color: inherit;
+            font-weight: bold;
+            border: none;
+            background-color: $secondary-color-text;
+            padding: .5rem 3.75rem;
         }
 </style>
