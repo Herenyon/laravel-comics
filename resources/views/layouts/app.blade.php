@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
-      
+        <title>DC Store</title>
+        <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico">
          @vite('resources/js/app.js')
     </head>
     <body>
@@ -14,33 +14,8 @@
 
         </section>
 
-        <section class="container-list">
-            <div class="container-cards">
+       @include('partials.homepage')
 
-            <h3>CURRENT SERIES</h3>
-                <div>
-                    <div class="container-card">
-
-                        <div class="container-comics" >
-                            <a href="">
-                                
-                                    @foreach ($comics as $comic)
-                                        
-                                           <img src="{{$comic['thumb']}}" alt=""> 
-                                            <h4>{{$comic['series']}}</h4> 
-                                        
-                                    @endforeach
-                               
-                            </a>
-                        </div>
-                    </div>
-                </div>     
-            </div>
-
-        <div class="button">
-            <button>LOAD MORE</button>
-        </div>
-    </section>
             
         
        </main>

@@ -28,12 +28,12 @@ section {
         display: flex;
         align-items: center;
 
-        // word-wrap: break-word;
+        word-wrap: break-word;
 
 
         .container-card {
             display: flex;
-            // flex-wrap: wrap;
+            flex-wrap: wrap;
             gap: 30px;
             width: 100%;
 
@@ -44,22 +44,30 @@ section {
                 width: min-content;
                 margin-top: 1.4375rem;
                 display: flex;
-                flex-direction: row;
 
-                img {
-                    width: 100%;
-                    height: auto;
+                a {
 
 
+
+                    img {
+                        width: 100%;
+                        height: auto;
+
+
+                    }
+
+
+
+                    h4 {
+                        text-decoration: none;
+                        color: white;
+
+                    }
                 }
 
 
 
-                h4 {
-                    text-decoration: none;
-                    color: white;
 
-                }
             }
 
         }
