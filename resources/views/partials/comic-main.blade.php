@@ -1,18 +1,37 @@
-<section class="container-list">
-    <div class="container-cards">
-
-    <h3>CURRENT SERIES</h3>
-        
-        <div class="container-card">
-            <div class="container-comics" >
-                                            
-                dad
-                
+<section >
+    <div class="top-blue">
+        <img src="{{$comics[0]['thumb']}}" alt="">
+    </div>
+    <div class="comic-container">
+        <div>
+            <h2>
+                {{$comics[0]['title']}}
+            </h2>
+            <div class="container-prezzo">
+                <div class="price">
+                    <div>
+                        U.S. Price: <strong>{{$comics[0]['price']}}</strong>
+                    </div>
+                    <div>
+                       <strong>AVAILABLE</strong> 
+                    </div>
+                </div>
+                 <div class="dropdown">
+                    Check Availability
+                </div>
             </div>
-        </div>               
+            <p>
+                {{$comics[0]['description']}}
+            </p>
+        </div>
+        <div class="adv">
+            <h6>ADVERTISEMENT</h6>
+            <img src="{{Vite::asset('resources/img/adv.jpg')}}" alt="">
+        </div>
+        
+        
     </div>
 
-    <div class="button">
-        <button>LOAD MORE</button>
-    </div>
+
+    
 </section>

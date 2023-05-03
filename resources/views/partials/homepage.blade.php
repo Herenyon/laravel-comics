@@ -9,7 +9,7 @@
             <div class="container-comics" >
                                             
                 @foreach ($comics as $comic)
-                    <a href="{{ route('comic' )}}" >  
+                    <a href="{{ route('comic')}}" >  
                         <img src="{{$comic['thumb']}}" alt=""> 
                         <h4>{{$comic['series']}}</h4> 
                     </a>  

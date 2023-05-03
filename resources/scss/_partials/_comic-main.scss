@@ -1,0 +1,53 @@
+.top-blue {
+    height: 5rem;
+    background-color: #0282f9;
+    position: relative;
+
+    img {
+        width: 200px;
+        position: absolute;
+        z-index: 1;
+        top: -250px;
+        left: 300px;
+        border: 1px solid white;
+    }
+}
+
+.comic-container {
+    padding: 1.125rem 18.75rem;
+    display: flex;
+
+    .container-prezzo {
+        display: flex;
+        background-color: #55ba59;
+        padding: .9375rem 1.5625rem;
+        color: white;
+        justify-content: space-between;
+        height: fit-content;
+
+        .price {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 11;
+            padding-right: 1.5625rem;
+        }
+
+        .dropdown {
+            flex-grow: 1;
+            text-align: center;
+            border-left: 1px solid #357739;
+        }
+    }
+
+    .adv {
+        margin-left: 2.5rem;
+
+        h6 {
+            text-align: end;
+        }
+    }
+
+    p {
+        padding-top: 1.875rem;
+    }
+}
