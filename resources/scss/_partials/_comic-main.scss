@@ -15,39 +15,49 @@
 
 .comic-container {
     padding: 1.125rem 18.75rem;
-    display: flex;
 
-    .container-prezzo {
+    .overview-container {
+
         display: flex;
-        background-color: #55ba59;
-        padding: .9375rem 1.5625rem;
-        color: white;
-        justify-content: space-between;
-        height: fit-content;
 
-        .price {
+        .container-prezzo {
             display: flex;
+            background-color: #55ba59;
+            padding: .9375rem 1.5625rem;
+            color: white;
             justify-content: space-between;
-            flex-grow: 11;
-            padding-right: 1.5625rem;
+            height: fit-content;
+
+            .price {
+                display: flex;
+                justify-content: space-between;
+                flex-grow: 11;
+                padding-right: 1.5625rem;
+            }
+
+            .dropdown {
+                flex-grow: 1;
+                text-align: center;
+                border-left: 1px solid #357739;
+            }
         }
 
-        .dropdown {
-            flex-grow: 1;
-            text-align: center;
-            border-left: 1px solid #357739;
+        .adv {
+            margin-left: 2.5rem;
+
+            h6 {
+                text-align: end;
+            }
+        }
+
+        p {
+            padding-top: 1.875rem;
         }
     }
 
-    .adv {
-        margin-left: 2.5rem;
+    .container-spec {
+        display: flex;
 
-        h6 {
-            text-align: end;
-        }
-    }
 
-    p {
-        padding-top: 1.875rem;
     }
 }

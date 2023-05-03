@@ -24,5 +24,6 @@ Route::get('/comic', function () {
     $data = [
         'comics' => config('db')
     ];
-    return view('comic', $data);
+    $artists = config('db.artists');
+    return view('comic', $data, compact('artists'));
 })->name('comic');
