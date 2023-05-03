@@ -1,5 +1,3 @@
-
-
 <section class="container-list">
     <div class="container-cards">
 
@@ -8,12 +6,7 @@
         <div class="container-card">
             <div class="container-comics" >
                                             
-                @foreach ($comics as $comic)
-                    <a href="{{ route('comic' )}}" >  
-                        <img src="{{$comic['thumb']}}" alt=""> 
-                        <h4>{{$comic['series']}}</h4> 
-                    </a>  
-                @endforeach    
+                dad
                 
             </div>
         </div>               

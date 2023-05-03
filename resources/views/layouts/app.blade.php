@@ -7,6 +7,7 @@
         <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico">
          @vite('resources/js/app.js')
     </head>
+    
     <body>
         @include('partials.header')
        <main>
@@ -14,10 +15,8 @@
 
         </section>
 
-       @include('partials.homepage')
+        @yield('page.main')
 
-            
-        
        </main>
        @include('partials.footer')
     </body>
