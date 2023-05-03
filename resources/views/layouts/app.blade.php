@@ -21,13 +21,16 @@
                 <div>
                     <div class="container-card">
 
-                        <div class="container">
+                        <div class="container-comics" >
                             <a href="">
-                                <ul class="list-unstyled d-flex gap-5">
+                                
                                     @foreach ($comics as $comic)
-                                        <li>{{$comic['series']}}</li>
+                                        
+                                           <img src="{{$comic['thumb']}}" alt=""> 
+                                            <h4>{{$comic['series']}}</h4> 
+                                        
                                     @endforeach
-                                </ul>
+                               
                             </a>
                         </div>
                     </div>
@@ -44,78 +47,4 @@
        @include('partials.footer')
     </body>
 </html>
-<style lang="scss" scoped>
-@use "../scss/variables.scss";
 
-section {
-            position: relative;
-        }
-
-.container-comic {
-
-
-    background-image: url('../img/jumbotron.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25rem;
-    padding: 1.125rem 18.75rem;
-    display: flex;
-    align-items: center;
-
-
-}
-
-.container-list {
-    color: white;
-    background-color: #1c1c1c;
-    padding: 1.125rem 18.75rem;
-
-
-    .container-cards {
-        display: flex;
-        align-items: center;
-
-        word-wrap: break-word;
-        
-
-        .container-card {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            width: 100%;
-
-        }
-
-        h3 {
-            top: -35px;
-            position: absolute;
-            padding: .5rem .9375rem;
-            background-color: $secondary-color-text;
-        }
-
-    }
-
-    .button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 3.125rem;
-
-        button {
-            color: inherit;
-            font-weight: bold;
-            border: none;
-            background-color: $secondary-color-text;
-            padding: .5rem 3.75rem;
-        }
-    }
-
-}
-button {
-            color: inherit;
-            font-weight: bold;
-            border: none;
-            background-color: $secondary-color-text;
-            padding: .5rem 3.75rem;
-        }
-</style>

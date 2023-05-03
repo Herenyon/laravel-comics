@@ -1,7 +1,7 @@
 <header>
     
-    <div class="d-flex">
-        head 1
+    <div class="container-top">
+       <small>head 1</small> 
     </div>
          
     <div class="container-header">
@@ -10,7 +10,7 @@
         </div>
         <div class="container-nav">
             <nav>
-                <ul class="list-unstyled d-flex justify-content-center gap-3">
+                <ul>
                     <li><a href="#"> CHARACTERS</a></li>
                     <li><a href="#"> COMICS</a></li>
                     <li><a href="#"> MOVIES</a></li>
@@ -30,61 +30,3 @@
 
 </header>
 
-<style lang="scss" scoped>
-
-.container-header {
-
-  display: flex;
-  padding: 1.125rem 18.75rem;
-  justify-content: space-between;
-  align-items: center;
-
-  .container-logo {
-    width: 50%;
-
-  }
-
-  .container-nav {
-
-    list-style: none;
-    nav{
-        ul {
-        list-style: none;
-        display: flex;
-
-
-        li {
-            padding: 10px;
-
-
-            a {
-                color: #464646;
-                text-decoration: none;
-                font-size: 0.95rem;
-                font-weight: bold;
-                padding-bottom: 15px;
-
-
-
-            }
-
-            &:hover {
-                border-bottom: 5px solid #0282f9;
-
-                a {
-                    color: #0282f9;
-                }
-            }
-
-
-
-        }
-    }
-
-    }
-  }
-}
-
-
-
-</style>

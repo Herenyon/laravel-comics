@@ -1,0 +1,91 @@
+@use "../variables.scss";
+
+section {
+    position: relative;
+}
+
+.container-comic {
+
+
+    background-image: url(../img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    padding: 1.125rem 18.75rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.container-list {
+    color: white;
+    background-color: #1c1c1c;
+    padding: 1.125rem 18.75rem;
+
+
+    .container-cards {
+        display: flex;
+        align-items: center;
+
+        // word-wrap: break-word;
+
+
+        .container-card {
+            display: flex;
+            // flex-wrap: wrap;
+            gap: 30px;
+            width: 100%;
+
+            .container-comics {
+
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                width: min-content;
+                margin-top: 1.4375rem;
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    width: 100%;
+                    height: auto;
+
+
+                }
+
+
+
+                h4 {
+                    text-decoration: none;
+                    color: white;
+
+                }
+            }
+
+        }
+
+        h3 {
+            top: -35px;
+            position: absolute;
+            padding: .5rem .9375rem;
+            background-color: #0282f9;
+        }
+
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3.125rem;
+
+        button {
+            color: inherit;
+            font-weight: bold;
+            border: none;
+            background-color: #0282f9;
+            padding: .5rem 3.75rem;
+        }
+    }
+
+}

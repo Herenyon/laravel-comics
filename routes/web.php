@@ -18,4 +18,4 @@ Route::get('/', function () {
         'comics' => config('db')
     ];
     return view('home', $data);
-});
+})->name('home');
