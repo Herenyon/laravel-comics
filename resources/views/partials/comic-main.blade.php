@@ -33,32 +33,64 @@
             
             
         </div>
-        <div class="container-spec">
+        
+
+    </div>
+    <div class="container-spec">
+        <div class="info">
             <div class="talent">
                 <h5>Talent</h5>
                 <div>
                     <div>Art By</div>
 
                     <div>
-                       @foreach ($artists['artists'] as $artist)
+                       {{-- @foreach ($artists['artists'] as $artist)
                             @if ($loop->last)
                                 {{ $artist }}
                             @else
                                 {{ $artist }},
                             @endif
-                        @endforeach
+                        @endforeach --}}
                     </div>
                     
                 </div>
                 <div>
-
+                    Written By:
                 </div>
             </div>
             <div class="specs">
                 <h5>Specs</h5>
+                <div>
+                    Series: <span>{{$comics[0]['series']}}</span> 
+                </div>
+                <div>
+                    U.S. Price: <span>{{$comics[0]['price']}}</span>
+                </div>
+                <div>
+                    On Sale Date: <span>{{$comics[0]['sale_date']}}</span>
+                </div>
             </div>
         </div>
-
+        
     </div>
-    
+    <div class="container-buy">
+        <div class="buy">
+            <div>
+                <div>DIGITAL COMICS</div>
+                <img src="{{Vite::asset('resources/img/cta-icons-phone.png')}}" alt="">
+            </div>
+            <div>
+                <div>SHOP DC</div>
+                <img src="{{Vite::asset('resources/img/cta-icons-cards.png')}}" alt="">
+            </div>
+            <div>
+                <div>COMIC SHOP LOCATOR</div>
+                <img src="{{Vite::asset('resources/img/cta-icons-point.png')}}" alt="">
+            </div>
+            <div>
+                <div>SUBSCRIPTIONS</div>
+                <img src="{{Vite::asset('resources/img/cta-icons-tshirt.png')}}" alt="">
+            </div>
+        </div>
+    </div>
 </section>

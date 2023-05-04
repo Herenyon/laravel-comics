@@ -1,7 +1,13 @@
 <header>
     
     <div class="container-top">
-       <small>head 1</small> 
+        <div>
+            <small>DC POWER VISA</small> 
+        </div>
+        <div>
+            <small>ADDITIONAL DC SITES</small> 
+        </div>
+       
     </div>
          
     <div class="container-header">

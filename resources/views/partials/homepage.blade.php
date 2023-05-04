@@ -22,4 +22,6 @@
     <div class="button">
         <button>LOAD MORE</button>
     </div>
-</section>
+   
+</section> 
+@include('partials.blue-section')

@@ -97,3 +97,42 @@ section {
     }
 
 }
+
+.container-azzurro {
+    background-color: #0282f9;
+    padding: 1.125rem 18.75rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+
+        color: white;
+
+        span {
+            margin-left: .9375rem;
+
+        }
+
+        img {
+            height: 50%;
+        }
+
+        svg {
+            width: 35%;
+            height: 35%;
+        }
+
+        .st0 {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 1.7732;
+            stroke-miterlimit: 10;
+
+        }
+    }
+}

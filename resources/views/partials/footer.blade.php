@@ -1,6 +1,6 @@
 <footer>
     <div class="container-footer">
-        @include('partials.blue-section')
+        
 
         <section class="container-link">
             <div class="container-liste">
